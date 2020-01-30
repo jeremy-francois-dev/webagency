@@ -1,0 +1,974 @@
+/*------Polices personnalisées------*/
+
+@font-face {
+    font-family: 'fontawesome-webfont';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/fontawesome-webfont.otf') format('truetype'),
+        url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glyphicons';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-BlackItalic';
+    src: url('../fonts/Roboto-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('../fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('../fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('../fonts/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url('../fonts/Roboto-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url('../fonts/Roboto-ThinItalic.ttf');
+}
+
+/*------Body------*/
+
+body {
+    margin: 0;
+    font-family: "Roboto-Regular";
+    width: 100%;
+}
+
+/*------Section Header------*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 100px;
+    font-size: 1em;
+    width: 100%;
+}
+
+nav {
+    width: auto;
+}
+
+#logo {
+    margin-top: 10px;
+}
+
+/*------Menu du header à l'horizontal------*/
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+}
+
+header li {
+    list-style: none;
+    padding-top: 13px;
+}
+
+header a {
+    text-decoration: none;
+    color: gray;
+    padding-top: 45px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*------Animation au passage sur le lien------*/
+
+header a:hover {
+    border-top: solid 3px #5cadd3;
+    color: black;
+}
+
+/*------Section Slider------*/
+
+#container_slider {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 35%;
+}
+
+/*------Images du slider------*/
+
+.slide_img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.slide_img img {
+    width: 100%;
+    height: 100%;
+}
+
+#i1,
+#i2 {
+    display: none;
+}
+
+/*------Eléments de navigation du slider------*/
+
+.pre,
+.nxt {
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    top: 46%;
+    background: rgb(19, 19, 19);
+    opacity: 0.4;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pre {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    left: 0;
+}
+
+.nxt {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    right: 0;
+}
+
+/*------Flèches du Slider------*/
+
+.arrow_left,
+.arrow_right {
+    position: absolute;
+    top: 50%;
+    z-index: 90;
+    color: white;
+}
+
+.arrow_left {
+    left: 3px;
+}
+
+.arrow_right {
+    right: 3px;
+}
+
+#i1:checked~#one,
+#i2:checked~#two {
+    z-index: 9;
+}
+
+/*------ Texte du slider------*/
+
+#text_slider {
+    position: absolute;
+    top: 27%;
+    left: 16%;
+    color: white;
+    z-index: 100;
+    font-family: "Roboto-Bold";
+}
+
+/*------ Premier paragraphe du slider------*/
+
+#text_1 {
+    font-size: 0.7em;
+}
+
+/*------ Titre du texte du slider "WEBANGECY"------*/
+
+#webagency {
+    color: #5cadd3;
+}
+
+/*------ Bouton du slider------*/
+
+.button_page {
+    background-color: #5cadd3;
+    width: 125px;
+    height: 43px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 5px 1px #4494bb;
+}
+
+.button_page a {
+    display: block;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*------Section Services------*/
+
+#service {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#heading_service {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-family: "Roboto-Bold";
+    font-size: 2.5em;
+}
+
+#heading_service hr,
+#heading_project hr {
+    background-color: #ebebeb;
+    width: 140px;
+    bottom: 19px;
+    position: relative;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.point_centre {
+    color: #5cadd3;
+    border: solid 3px white;
+    border-radius: 50%;
+}
+
+/*------ Image + paragraphes de la section service------*/
+
+#section_service {
+    display: flex;
+    justify-content: space-between;
+}
+
+#image_service {
+    margin-left: 200px;
+}
+
+#text_service {
+    margin-top: 2%;
+    margin-right: 20px;
+}
+
+#text_service ul {
+    position: relative;
+}
+
+#text_service li {
+    margin-bottom: 40px;
+    padding-left: 80px;
+    line-height: 20px;
+    position: relative;
+}
+
+/*------ Font awesome de la liste à puces------*/
+
+.fa-li {
+    vertical-align: middle;
+    background: #fbfbfb00;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 80px;
+    border: 2px solid #ebebeb;
+    color: #5cadd3;
+}
+
+.point {
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    color: #5cadd3;
+}
+
+/*------Section Projet------*/
+
+#project {
+    background-color: #ebebeb67;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#heading_project {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 5px;
+}
+
+/*------Menu de la section projet------*/
+
+#nav_project {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#menu_project {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#menu_project li {
+    width: 86.5px;
+    height: 40px;
+    list-style: none;
+    background-color: #e5e5e5;
+    position: relative;
+}
+
+/*------ Arrondis du menu de la section projet------*/
+
+#menu_project_1,
+#btn1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#menu_project_4,
+#btn4 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#menu_project li:hover {
+    background-color: #5cadd3;
+    border-bottom: 3px solid #468cad;
+    display: block;
+    color: white;
+}
+
+/*------Bouton "all works" sélectionné au chargement de la page------*/
+
+#btn1 {
+    background-color: #5cadd3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: 3px solid #468cad;
+}
+
+#menu_project_1 .fleche {
+    display: block;
+}
+
+/*------Propriétés du menu non sélectionné------*/
+
+.active {
+    color: #717479;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+}
+
+/*-------------Hover sur le menu--------------*/
+#menu_project li:hover .fleche {
+    display: block;
+}
+
+#menu_project li a:hover {
+    color: white;
+}
+
+/*------Flèches sous le menu des projets------*/
+
+.fleche {
+    position: absolute;
+    top: 32px;
+    left: 38px;
+    display: none;
+    color: #468cad;
+}
+
+/*------Actions au clic sur le menu de la section projet------*/
+
+/*------Configuration pour les styles du menu au clic------*/
+#all_works:target #btn1 {
+    background-color: #5cadd3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: 3px solid #468cad;
+}
+
+#all_works:target #menu_project_1 .fleche {
+    display: block;
+}
+
+#creative:target #btn1,
+#corporate:target #btn1,
+#portfolio:target #btn1 {
+    color: #717479;
+    background-color: #e5e5e5;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: none;
+}
+
+#creative:target #menu_project_1 .fleche,
+#corporate:target #menu_project_1 .fleche,
+#portfolio:target #menu_project_1 .fleche {
+    display: none;
+}
+
+#creative:target #btn1:hover,
+#corporate:target #btn1:hover,
+#portfolio:target #btn1:hover {
+    background-color: #5cadd3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: 3px solid #468cad;
+}
+
+#creative:target #menu_project_1:hover .fleche,
+#corporate:target #menu_project_1:hover .fleche,
+#portfolio:target #menu_project_1:hover .fleche {
+    display: block;
+}
+
+/*------Configuration bouton "creative"------*/
+
+#creative:target #btn2 {
+    background-color: #5cadd3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: 3px solid #468cad;
+}
+
+#creative:target #menu_project_2 .fleche {
+    display: block;
+}
+
+#creative:target .corpo,
+#creative:target .portfo {
+    display: none;
+}
+
+/*------Configuration bouton "corporate"------*/
+
+#corporate:target #btn3 {
+    background-color: #5cadd3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: 3px solid #468cad;
+}
+
+#corporate:target #menu_project_3 .fleche {
+    display: block;
+}
+
+#corporate:target .crea,
+#corporate:target .portfo {
+    display: none;
+}
+
+/*------Configuration bouton "portfolio"------*/
+
+#portfolio:target #btn4 {
+    background-color: #5cadd3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: "Roboto-Bold";
+    display: block;
+    border-bottom: 3px solid #468cad;
+}
+
+#portfolio:target #menu_project_4 .fleche {
+    display: block;
+}
+
+#portfolio:target .crea,
+#portfolio:target .corpo {
+    display: none;
+}
+
+/*------Organisation des images du portfolio------*/
+
+#images_project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1496px;
+}
+
+#images_project img {
+    width: 260px;
+}
+
+#images_project figure {
+    position: relative;
+}
+
+/*------Description des images de la section projet------*/
+
+.eye_project {
+    vertical-align: middle;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    vertical-align: middle;
+    background: #fbfbfb00;
+    border-radius: 50%;
+    width: 25px;
+    height: 28px;
+    line-height: 30px;
+    padding-left: 6px;
+    border: 2px solid #ebebeb;
+    background-color: #4692b1;
+    color: white;
+}
+
+#images_project figcaption {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
+    height: 60px;
+    width: 250px;
+    bottom: 4px;
+    line-height: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+    display: none;
+}
+
+#images_project figure:hover figcaption {
+    display: block;
+}
+
+/*------Section Map------*/
+
+#map {
+    position: relative;
+    overflow: hidden;
+}
+
+/*------Google Map------*/
+
+iframe {
+    width: 100%;
+    height: 628px;
+}
+
+/*------Filtre de la Google Map------*/
+
+#filter_map {
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 122, 145, 0.4);
+    position: absolute;
+    top: 0;
+    filter: drop-shadow(2px 2px 2px black) opacity(.5);
+    -webkit-filter: drop-shadow(2px 2px 2px black) opacity(.5);   
+    -moz-filter:drop-shadow(2px 2px 2px black) opacity(.5); 
+    -o-filter:drop-shadow(2px 2px 2px black) opacity(.5); 
+    -ms-filter:drop-shadow(2px 2px 2px black) opacity(.5); 
+}
+
+/*------Formulaire------*/
+
+form {
+    position: absolute;
+    right: 150px;
+    top: 45px;
+    bottom: 55px;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 360px;
+    height: 527px;
+    z-index: 3;
+    padding-bottom: 30px;
+}
+
+#contact_info {
+    font-family: "Roboto-Bold";
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+#map_web {
+    color: #64686d;
+    font-family: "Roboto-Bold";
+}
+
+/*------Champs du formulaire------*/
+
+#map input,
+textarea {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#map input {
+    height: 34px;
+    margin-bottom: 16px;
+}
+
+#map textarea {
+    height: 173px;
+}
+
+/*------Bouton du formulaire------*/
+
+.button_form {
+    background-color: #5cadd3;
+    width: 116px;
+    height: 35px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 5px 1px #4494bb;
+}
+
+.button_form a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 7px 0;
+}
+
+/*------Responsive grands écrans + tablette------*/
+
+@media all and (min-width:810px) and (max-width: 1121px) {
+
+    #section_service {
+        flex-direction: column;
+    }
+
+    #image_service {
+        margin: 0;
+        text-align: center;
+    }
+
+    #text_service {
+        text-align: center;
+        margin: 0;
+    }
+
+    #text_service ul {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #text_service li {
+        width: 30%;
+        padding-left: 0;
+    }
+
+    #text_service h3 {
+        width: 80%;
+    }
+
+    #text_service p {
+        margin-top: 3em;
+        text-align: justify;
+    }
+
+    .pre,
+    .nxt,
+    .arrow_left,
+    .arrow_right {
+        display: none;
+    }
+}
+
+/*------Responsive petits écrans------*/
+
+@media all and (min-width:580px) and (max-width: 810px) {
+
+    header {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .pre,
+    .nxt,
+    .button_page,
+    .arrow_left,
+    .arrow_right {
+        display: none;
+    }
+
+    #text_slider {
+        position: relative !important;
+        width: 60%;
+        color: white;
+        z-index: 100;
+        padding-top: 5%;
+        font-family: "Roboto-Bold";
+    }
+
+    #container_slider {
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    #section_service {
+        flex-direction: column;
+    }
+
+    #image_service {
+        margin: 0;
+        text-align: center;
+    }
+
+    #text_service {
+        margin: 0;
+        text-align: center;
+    }
+
+    #text_service ul {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #text_service li {
+        text-align: center;
+        padding: 0;
+    }
+
+    #text_service h3 {
+        text-align: center;
+    }
+
+    .fa-li,
+    .point {
+        margin-left: 20%;
+    }
+
+    #text_service p {
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    header a:hover {
+        border-top: inherit;
+        color: black;
+    }
+}
+
+/*------Responsive très petits écrans------*/
+
+@media all and (max-width:580px) {
+
+    header {
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        height: 130px;
+    }
+
+    header ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header a {
+        padding: 0;
+    }
+
+    header a:hover {
+        border-top: inherit;
+        color: black;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .pre,
+    .nxt,
+    .button_page,
+    .arrow_left,
+    .arrow_right,
+    .slide_img {
+        display: none;
+    }
+
+    #container_slider {
+        padding: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #text_slider {
+        position: relative !important;
+        color: black;
+        width: 70%;
+        margin: auto;
+        margin-left: 0;
+    }
+
+
+    #section_service {
+        flex-direction: column;
+    }
+
+    #image_service {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #image_service img {
+
+        width: 100%;
+    }
+
+    #text_service {
+        margin: 0;
+        text-align: center;
+    }
+
+    #text_service ul {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #text_service li {
+        text-align: center;
+        padding: 0;
+    }
+
+    #text_service h3 {
+        text-align: center;
+    }
+
+    .fa-li,
+    .point {
+        margin-left: 20%;
+    }
+
+    #text_service p {
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    #menu_project {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #menu_project li {
+        width: 100%;
+        height: 40px;
+        list-style: none;
+        background-color: #e5e5e5;
+    }
+
+    #images_project {
+        margin-top: 50%;
+    }
+
+    #portfolio:target #menu_project_4 .fleche {
+        display: none;
+    }
+
+    form {
+        position: inherit !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        left: 0;
+        background-color: rgb(255, 255, 255, 0.85);
+        width: 95%;
+    }
+}

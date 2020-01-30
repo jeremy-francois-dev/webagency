@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site web de l'agence Webagency Paris">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>WebAgency !</title>
+    </head>
+    <body>
+        <!-- section header -->
+        <header>
+            <div id="logo">
+                <img src="images/logo.png" alt="logo web agency">
+            </div>
+            <!-- menu du header -->
+            <nav>
+                <ul>
+                    <li><a href="#container_slider">Accueil</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#project">Portfolio</a></li>
+                    <li><a href="#map">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- section slider -->
+        <div id="container_slider">
+            <input type="radio" name="images" id="i2" checked>
+            <input type="radio" name="images" id="i1" checked>
+            <!-- images + boutons du slider -->
+            <div class="slide_img" id="one">
+                <img src="images/slide1.jpg" alt="petite fille avec de la peinture">
+                <label for="i2" class="pre"></label>
+                <label for="i2" class="nxt"></label>
+            </div>
+            <div class="slide_img" id="two">
+                <img src="images/slide2.jpg" alt="petit garçon qui crie">
+                <label for="i1" class="pre"></label>
+                <label for="i1" class="nxt"></label>
+            </div>
+            <!-- texte du slider -->
+            <div id="text_slider">
+                <h1><span id="webagency">WEBAGENCY</span> : L'AGENCE DE TOUS<br /> VOS PROJETS !</h1>
+                <p id="text_1">Vous avez un projet web? La WebAgency vous aide à le réaliser ! </p>
+                <p class="button_page"><a href="#">Plus d'infos</a></p>
+            </div>
+            <!-- flèches du slider -->
+            <div>
+                <span class="arrow_left"><i class="fas fa-angle-left fa-lg"></i></span>
+                <span class="arrow_right"><i class="fas fa-angle-right fa-lg"></i></span>
+            </div>
+        </div>
+        <!-- section service -->
+        <section id="service">
+            <div id="heading_service">
+                <h2>NOS SERVICES</h2>
+                <span class="point_centre"><i class="fas fa-circle"></i></span>
+                <hr>
+                <p>Choisissez le service adapté à vos besoins; la webagency se fera un plaisir de vous accompagner
+                    de la création de votre stratégie digitale jusqu'à sa mise en place.
+                </p>
+            </div>
+            <!-- image + paragraphe de la section service -->
+            <div id="section_service">
+                <div id="image_service">
+                    <img src="images/main-feature.png" alt="écran d'ordinateur">
+                </div>
+                <div id="text_service">
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-chart-line fa-2x"></i></span>
+                            <h3>UX design</h3>
+                            <p>L'UX design permet de créer un site orienté expérience utilisateur et permettant un meilleur
+                                taux de conversion.</p>
+                            <span class="point"><i class="fas fa-circle"></i></span>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-cubes fa-2x"></i></span>
+                            <h3>UI design</h3>
+                            <p>L'UI design permet d'obtenir un design propre et une interface épurée afin que l'internaute
+                                puisse facilement naviguer au sein du site web.
+                            </p>
+                            <span class="point"><i class="fas fa-circle"></i></span>
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-chart-pie fa-2x"></i></span>
+                            <h3>SEO</h3>
+                            <p>Très important pour le référencement des sites et le trafic naturel, le seo ou encore
+                                "search engine optimization" permet d'apparaître dans les premiers résultats de la SERP
+                            </p>
+                            <span class="point"><i class="fas fa-circle"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- section projet -->
+        <section id="project">
+            <div id="heading_project">
+                <h2>NOS PROJETS</h2>
+                <span class="point_centre"><i class="fas fa-circle"></i></span>
+                <hr>
+                <p>Nos clients sont notre plus grande fierté. Découvrez l'ensemble des projets réalisés sur l'année
+                    2018.
+                </p>
+            </div>
+            <div id="all_works">
+                <div id="creative">
+                    <div id="corporate">
+                        <div id="portfolio">
+                            <div id="nav_project">
+                                <ul id="menu_project">
+                                    <li id="menu_project_1">
+                                        <!-- menu des projets -->
+                                        <a href="#all_works" id="btn1" class="active">All Works</a>
+                                        <span class="fleche"><i class="fas fa-sort-down fa-lg"></i></span>
+                                    </li>
+                                    <li id="menu_project_2">
+                                        <a href="#creative" class="active" id="btn2">Creative</a>
+                                        <span class="fleche"><i class="fas fa-sort-down fa-lg"></i></span>
+                                    </li>
+                                    <li id="menu_project_3">
+                                        <a href="#corporate" class="active" id="btn3">Corporate</a>
+                                        <span class="fleche"><i class="fas fa-sort-down fa-lg"></i></span>
+                                    </li>
+                                    <li id="menu_project_4">
+                                        <a href="#portfolio" class="active" id="btn4">Portfolio</a>
+                                        <span class="fleche"><i class="fas fa-sort-down fa-lg"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Portfolio de la section projet -->
+                            <div id="images_project">
+                                <figure class="crea">
+                                    <figcaption>
+                                        <span class="title_fig">Portfolio item 1</span><br />le projet lunettes
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/01.jpg" alt="projet lunettes" />
+
+                                </figure>
+                                <figure class="crea">
+                                    <figcaption>
+                                        <span class="title_fig">Portfolio item 2</span><br />le projet lapin
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/02.jpg" alt="projet lapin" />
+                                </figure>
+                                <figure class="crea">
+                                    <figcaption>
+                                        <span class="title_fig"> Portfolio item 3</span><br />le projet pompadour
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/03.jpg" alt="projet pompadour" />
+                                </figure>
+                                <figure class="corpo">
+                                    <figcaption>
+                                        <span class="title_fig"> Portfolio item 4</span><br />le projet plan
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/04.jpg" alt="projet plan" />
+                                </figure>
+                                <figure class="corpo">
+                                    <figcaption>
+                                        <span class="title_fig"> Portfolio item 5</span><br />le projet sac
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/05.jpg" alt="projet sac" />
+                                </figure>
+                                <figure class="corpo">
+                                    <figcaption>
+                                        <span class="title_fig"> Portfolio item 6</span><br />le projet ville
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/06.jpg" alt="projet ville" />
+                                </figure>
+                                <figure class="portfo">
+                                    <figcaption>
+                                        <span class="title_fig"> Portfolio item 7</span><br />le projet fusée
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/07.jpg" alt="projet fusée" />
+                                </figure>
+                                <figure class="portfo">
+                                    <figcaption>
+                                        <span class="title_fig"> Portfolio item 8</span><br />le projet curriculum
+                                        <span class="eye_project"><i class="far fa-eye"></i></span>
+                                    </figcaption>
+                                    <img src="images/08.jpg" alt="projet curriculum" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section map -->
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807188!2d2.3476369157268033!3d48.873051779288936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1547572236172">
+            </iframe>
+            <!-- Formulaire -->
+            <form action="traitement.php">
+                <h3 id="contact_info">Contact Info</h3>
+                <p><span id="map_web">WebAgency SAS</span> <br />
+                    25 Rue d'Hauteville 75010 Paris<br />
+                    Tél: 01 02 03 04 05
+                </p>
+                <input type='text' class='Name' name='Name' placeholder=' Name' />
+                <input type='text' class='Email' name='Email' placeholder=' Email' />
+                <input type='text' class='Subject' name='Subject' placeholder=" Subject" />
+                <textarea name="precisions" id="precisions" placeholder=" Message"></textarea>
+                <p class="button_form"><a href="#">Send Message</a></p>
+            </form>
+            <div id="filter_map"></div>
+        </section>
+    </body>
+</html>
